@@ -15,12 +15,11 @@ export default function AboutPage() {
           <h1 className="text-3xl font-semibold text-foreground mb-8">About Me</h1>
 
           <p className="text-muted-foreground leading-relaxed mb-6">
-            Hello! I'm a writer and developer passionate about technology, design, and sharing ideas through writing.
+            Hello! I'm Harsh, a Software Engineer and writer passionate about technology, design, and sharing ideas through writing.
           </p>
 
           <p className="text-muted-foreground leading-relaxed mb-6">
-            This blog is where I share my thoughts, tutorials, and experiences. I believe in learning in public and
-            documenting the journey.
+            This blog is where I share what I’m learning—through tutorials, experiments, and experiences—while documenting the journey in public.
           </p>
 
           <h2 className="text-xl font-semibold text-foreground mt-10 mb-4">Connect</h2>
@@ -28,27 +27,37 @@ export default function AboutPage() {
           <ul className="space-y-2 text-muted-foreground">
             <li>
               <a
-                href="https://github.com/yourusername"
+                href="https://github.com/harshanand120"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="underline hover:text-foreground transition-colors"
               >
-                GitHub
+                GitHub: harshanand120
               </a>
             </li>
             <li>
               <a
-                href="https://twitter.com/yourusername"
+                href="https://www.linkedin.com/in/harsh-anand-151622144/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="underline hover:text-foreground transition-colors"
               >
-                Twitter/X
+                LinkedIn: harsh-anand-151622144
               </a>
             </li>
             <li>
-              <a href="mailto:your@email.com" className="underline hover:text-foreground transition-colors">
-                Email
+              <a
+                href="https://twitter.com/harshanand120"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="underline hover:text-foreground transition-colors"
+              >
+                Twitter/X: @harshanand120
+              </a>
+            </li>
+            <li>
+              <a href="mailto:me@harshanand.dev" className="underline hover:text-foreground transition-colors">
+                Email: me@harshanand.dev
               </a>
             </li>
           </ul>

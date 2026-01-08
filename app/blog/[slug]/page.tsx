@@ -38,7 +38,7 @@ export default async function BlogPostPage({ params }: { params: Promise<{ slug:
             href="/"
             className="text-sm text-muted-foreground hover:text-foreground transition-colors inline-flex items-center gap-1"
           >
-            ← Back to writings
+            ← Back
           </Link>
           <ThemeToggle />
         </nav>
@@ -59,7 +59,7 @@ export default async function BlogPostPage({ params }: { params: Promise<{ slug:
 
         <footer className="mt-20 pt-8 border-t border-border">
           <Link href="/" className="text-sm text-muted-foreground hover:text-foreground transition-colors">
-            ← Back to all writings
+            ← Back
           </Link>
         </footer>
       </div>
