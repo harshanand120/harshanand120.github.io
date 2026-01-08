@@ -7,9 +7,7 @@ const nextConfig = {
   },
   images: {
     unoptimized: true,
-  },
-  basePath: '/harshanand120.github.io',
-  assetPrefix: '/harshanand120.github.io/',
+  }
 }
 
 export default nextConfig
