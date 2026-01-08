@@ -8,10 +8,8 @@ const nextConfig = {
   images: {
     unoptimized: true,
   },
-
-  // Replace 'your-repo-name' with your actual repository name
-  // basePath: '/your-repo-name',
-  // assetPrefix: '/your-repo-name/',
+  basePath: '/harshanand120.github.io',
+  assetPrefix: '/harshanand120.github.io/',
 }
 
 export default nextConfig
