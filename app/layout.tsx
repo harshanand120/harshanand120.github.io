@@ -11,11 +11,10 @@ const jetbrainsMono = JetBrains_Mono({
 
 export const metadata: Metadata = {
   title: {
-    default: "My Blog",
-    template: "%s | My Blog",
+    default: "blogs",
+    template: "%s",
   },
-  description: "A personal blog about technology, life, and ideas.",
-    generator: 'v0.app'
+  description: "A personal blog about technology, life, and ideas."
 }
 
 export default function RootLayout({

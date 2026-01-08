@@ -1,7 +1,8 @@
+import { Footer } from "@/components/footer"
 import { Header } from "@/components/header"
 
 export const metadata = {
-  title: "About",
+  title: "about",
   description: "Learn more about me and my work.",
 }
 
@@ -19,7 +20,7 @@ export default function AboutPage() {
           </p>
 
           <p className="text-muted-foreground leading-relaxed mb-6">
-            This blog is where I share what I’m learning—through tutorials, experiments, and experiences—while documenting the journey in public.
+            This blog is where I share what I’m learning, through tutorials, experiments, and experiences—while documenting the journey in public.
           </p>
 
           <h2 className="text-xl font-semibold text-foreground mt-10 mb-4">Connect</h2>
@@ -62,10 +63,7 @@ export default function AboutPage() {
             </li>
           </ul>
         </article>
-
-        <footer className="mt-20 pt-8 border-t border-border">
-          <p className="text-sm text-muted-foreground">© {new Date().getFullYear()} Your Name. All rights reserved.</p>
-        </footer>
+        <Footer/>
       </div>
     </main>
   )

@@ -2,6 +2,7 @@ import Link from "next/link"
 import { getAllPosts } from "@/lib/posts"
 import { formatDate } from "@/lib/utils"
 import { Header } from "@/components/header"
+import { Footer } from "@/components/footer"
 
 export default function HomePage() {
   const posts = getAllPosts()
@@ -9,7 +10,7 @@ export default function HomePage() {
   return (
     <main className="min-h-screen bg-background">
       <div className="max-w-2xl mx-auto px-6 py-16">
-        <Header currentPage="writings" />
+        <Header currentPage="blogs" />
 
         <section>
           <h2 className="sr-only">Blog Posts</h2>
@@ -31,10 +32,7 @@ export default function HomePage() {
             ))}
           </ul>
         </section>
-
-        <footer className="mt-20 pt-8 border-t border-border">
-          <p className="text-sm text-muted-foreground">© {new Date().getFullYear()} Your Name. All rights reserved.</p>
-        </footer>
+        <Footer/>
       </div>
     </main>
   )
