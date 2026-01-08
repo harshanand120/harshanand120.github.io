@@ -26,10 +26,8 @@ jobs:
           node-version: '20'
           cache: 'pnpm'
 
-      - name: Enable Corepack and prepare pnpm
-        run: |
-          corepack enable
-          corepack prepare pnpm@latest --activate
+      - name: Configure pnpm store for caching
+        run: pnpm config set store-dir ~/.pnpm-store
 
       - name: Install dependencies
         run: pnpm install --frozen-lockfile
