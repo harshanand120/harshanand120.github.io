@@ -4,4 +4,4 @@
 5:"$Sreact.suspense"
 0:{"buildId":"zxbojdDVxwe0XkVWfuOi3","rsc":["$","$1","h",{"children":[null,["$","$L2",null,{"children":"$@3"}],["$","div",null,{"hidden":true,"children":["$","$L4",null,{"children":["$","$5",null,{"name":"Next.Metadata","children":"$@6"}]}]}],["$","meta",null,{"name":"next-size-adjust","content":""}]]}],"loading":null,"isPartial":false}
 3:[["$","meta","0",{"charSet":"utf-8"}],["$","meta","1",{"name":"viewport","content":"width=device-width, initial-scale=1"}]]
-6:[["$","title","0",{"children":"Hello World: My First Blog Post"}],["$","meta","1",{"name":"description","content":"Welcome to my blog! This is my first post where I share what this space is all about."}]]
+6:[["$","title","0",{"children":"IPv6 — The Why & The Big Picture"}],["$","meta","1",{"name":"description","content":"A tour through the world of IPv6, its features, benefits, adoption, why it matters, and how it compares to IPv4."}]]
