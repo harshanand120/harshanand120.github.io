@@ -40,12 +40,12 @@ export default function AboutPage() {
             <li>
               <span>LinkedIn: </span>
               <a
-                href="https://www.linkedin.com/in/harsh-anand-151622144/"
+                href="https://www.linkedin.com/in/harshanand120/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="underline hover:text-foreground transition-colors"
               >
-                 harsh-anand-151622144
+                 harshanand120
               </a>
             </li>
             <li>
