@@ -38,6 +38,7 @@
   --sidebar-ring: oklch(0.708 0 0);
   --background: oklch(1 0 0);
   --foreground: oklch(0.145 0 0);
+  --grid-line: rgba(0, 0, 0, 0.02);
 }
 
 .dark {
@@ -74,6 +75,7 @@
   --sidebar-accent-foreground: oklch(0.985 0 0);
   --sidebar-border: oklch(1 0 0 / 10%);
   --sidebar-ring: oklch(0.556 0 0);
+  --grid-line: rgba(255, 255, 255, 0.03);
 }
 
 @theme inline {
@@ -127,31 +129,52 @@
   * {
     @apply border-border outline-ring/50;
   }
+
   body {
     @apply bg-background text-foreground;
   }
+
   html {
     @apply font-sans;
   }
+
   ::view-transition-group(root) {
     animation-timing-function: var(--expo-out);
   }
+
   ::view-transition-new(root) {
     mask: url('data:image/svg+xml,<svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M0 0H40L0 40V0Z" fill="url(%23paint0_linear_16_14)"/><defs><linearGradient id="paint0_linear_16_14" x1="0" y1="0" x2="20.5" y2="20.5" gradientUnits="userSpaceOnUse"><stop stop-color="current"/><stop offset="0.84506" stop-color="current" stop-opacity="0.99"/><stop offset="0.9506" stop-color="current" stop-opacity="0"/><stop offset="1" stop-color="current" stop-opacity="0"/></linearGradient></defs></svg>') top left / 0 no-repeat;
     mask-origin: top left;
     animation: scale 1.5s;
     animation-fill-mode: both;
   }
-  ::view-transition-old(root),.dark::view-transition-old(root) {
+
+  ::view-transition-old(root),
+  .dark::view-transition-old(root) {
     animation: scale 1.5s;
     animation-fill-mode: both;
     z-index: -1;
     transform-origin: top left;
   }
 
-@keyframes scale {
-  to {
-    mask-size: 200vmax;
+  @keyframes scale {
+    to {
+      mask-size: 200vmax;
+    }
+  }
+}
+
+@layer utilities {
+  .bg-grid-pattern {
+    background-size: 40px 40px;
+    background-image:
+      linear-gradient(to right, var(--grid-line) 1px, transparent 1px),
+      linear-gradient(to bottom, var(--grid-line) 1px, transparent 1px);
+  }
+
+  @media (min-width: 768px) {
+    .bg-grid-pattern {
+      mask-image: radial-gradient(ellipse at 50% 0%, black 40%, transparent 80%);
     }
   }
 }

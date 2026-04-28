@@ -3,7 +3,7 @@
 import { useTheme } from "next-themes"
 import { useEffect, useState } from "react"
 import { flushSync } from "react-dom"
-import { Moon, Sun } from "lucide-react"
+import { MoonIcon, SunMediumIcon } from "lucide-react"
 
 export function ThemeToggle() {
   const { setTheme, resolvedTheme } = useTheme()
@@ -14,7 +14,7 @@ export function ThemeToggle() {
   }, [])
 
   if (!mounted) {
-    return <div className="w-8 h-8" />
+    return <div className="w-9 h-9" />
   }
 
   const toggleTheme = () => {
@@ -25,7 +25,7 @@ export function ThemeToggle() {
       return
     }
 
-    (document as any).startViewTransition(() => {
+    ;(document as any).startViewTransition(() => {
       flushSync(() => {
         setTheme(nextTheme)
       })
@@ -33,12 +33,18 @@ export function ThemeToggle() {
   }
 
   return (
-    <button
-      onClick={toggleTheme}
-      className="p-2 rounded-md text-muted-foreground hover:text-foreground hover:bg-secondary transition-colors"
-      aria-label={`Switch to ${resolvedTheme === "dark" ? "light" : "dark"} mode`}
-    >
-      {resolvedTheme === "dark" ? <Sun className="h-4 w-4" /> : <Moon className="h-4 w-4" />}
-    </button>
+    <div className="inline-flex items-center justify-center rounded-lg border border-border/60 bg-background/60 backdrop-blur-sm">
+      <button
+        onClick={toggleTheme}
+        className="p-2 rounded-lg text-muted-foreground hover:text-foreground transition-colors"
+        aria-label={`Switch to ${resolvedTheme === "dark" ? "light" : "dark"} mode`}
+      >
+        {resolvedTheme === "dark" ? (
+          <SunMediumIcon className="h-5 w-5" />
+        ) : (
+          <MoonIcon className="h-5 w-5" />
+        )}
+      </button>
+    </div>
   )
 }
