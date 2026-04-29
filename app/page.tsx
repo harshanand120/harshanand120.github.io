@@ -216,7 +216,7 @@ export default function AboutPage() {
               <Link href="https://github.com/harshanand120" target="_blank" rel="noopener noreferrer" className="relative w-12 h-12 shrink-0 overflow-hidden rounded-xl border border-zinc-200 dark:border-zinc-800 hover:scale-110 transition-transform hover:border-zinc-300 dark:hover:border-zinc-700">
                 <Image src="/GitHub.png" alt="GitHub" fill className="object-cover" />
               </Link>
-              <Link href="#" target="_blank" rel="noopener noreferrer" className="group flex items-center justify-center relative w-12 h-12 shrink-0 overflow-hidden rounded-xl border border-zinc-200 dark:border-zinc-800 hover:scale-110 transition-transform hover:border-zinc-300 dark:hover:border-zinc-700 bg-white dark:bg-zinc-900">
+              <Link href="mailto:me@harshanand.dev" target="_blank" rel="noopener noreferrer" className="group flex items-center justify-center relative w-12 h-12 shrink-0 overflow-hidden rounded-xl border border-zinc-200 dark:border-zinc-800 hover:scale-110 transition-transform hover:border-zinc-300 dark:hover:border-zinc-700 bg-white dark:bg-zinc-900">
                 <Mail className="block group-hover:hidden text-zinc-600 dark:text-zinc-400" />
                 <MailOpen className="hidden group-hover:block text-zinc-900 dark:text-zinc-100" />
               </Link>

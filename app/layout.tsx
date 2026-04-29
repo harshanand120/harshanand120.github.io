@@ -14,7 +14,7 @@ const jetbrainsMono = JetBrains_Mono({
 
 export const metadata: Metadata = {
   title: {
-    default: "about",
+    default: "About Me",
     template: "%s",
   },
   description: "A personal blog about technology, life, and ideas."
